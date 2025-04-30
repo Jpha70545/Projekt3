@@ -1,0 +1,50 @@
+Body{
+    background-color: #EAE2D0;
+    
+ }
+ {
+     .item1{grid-area: header;}
+     .item2{grid-area: menu;}
+     .item3{grid-area: indhold;}
+ }
+ #grid-container{
+     display: grid;
+     grid-template-areas:
+     "header, header, header"
+     "Menu menu menu"
+     "indhold indhold indhold";
+     "footer footer footer"
+ grid-template-columns: 1fr;
+ grid-template-rows: 100px auto 100px;
+ height:100vh;
+ grid-gap: 10px;
+ background-color: blue;
+ padding: 10px;
+ }
+ 
+ .header{
+     grid-area: header;
+     background-color: red;
+     height: 100px;
+     width:100%;
+     
+ }
+ .menu{
+     grid-area: menu;
+     background-color: green;
+ }
+
+.indhold{
+    grid-area:indhold;
+    background-color: rgb(226, 176, 25);
+    width: 100%;
+    height: auto;
+}
+
+    .footer{
+    grid-area:footer;
+    background-color: pink;
+    width: 100%;
+    height: 60px;
+
+}
